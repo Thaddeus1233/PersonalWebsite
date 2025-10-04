@@ -5,34 +5,40 @@
   box-sizing: border-box;
 }
 
-/* Body */
 body {
+  margin: 0;
   font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background-color: #fbfbfc;
-  color: #333;
-  min-height: 100vh;
 
-  /* Gradient background for all pages */
   background: linear-gradient(270deg, #6eb2ff, #6a11cb, #ff6ec4, #6eb2ff);
   background-size: 800% 800%;
-
-  /* Gradient animation */
   animation: gradientScroll 20s ease infinite;
 }
 
-/* Gradient animation keyframes */
 @keyframes gradientScroll {
   0%   { background-position: 0% 50%; }
   50%  { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
-}
+} 
 
 /* Header (basic header structure) */
 header {
   color: white;
   padding: 2rem;
   text-align: center;
+}
+
+.header {
+  position: relative;
+  height: 200px; /* height of the top area */
+  overflow: hidden;
+}
+
+.top-wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /* Navigation */
